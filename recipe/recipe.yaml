@@ -42,7 +42,7 @@ tests:
         - pip
         - python ${{ python_min }}.*
     script:
-      - pip show __RECIPE_MANAGER_SUBSTITUTION_MARKER__ | grep -Fx 'Version: ${{ name }}'
+      - "pip show __RECIPE_MANAGER_SUBSTITUTION_MARKER__ | grep -Fx 'Version: ${{ name }}'"
 
 about:
   license: BSD-3-Clause
